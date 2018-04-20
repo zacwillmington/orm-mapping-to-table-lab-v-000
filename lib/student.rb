@@ -22,7 +22,7 @@ class Student
       DB[:conn].execute(sql)
   end
 
-  def self.drop
+  def self.drop_table
       drop = "DROP TABLE[IF EXISTST] students;"
       DB[:conn].execute(drop)
   end
